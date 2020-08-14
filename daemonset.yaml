@@ -24,6 +24,8 @@ spec:
       containers:
       - name: external-suricata-1
         image: jasonish/suricata:5.0.3
+        command: ["/usr/bin/suricata"]
+        args: ["-c suricata.yaml", "-s signature.rules", "-i net1"]
         resources:
           limits:
             cpu: 2
@@ -42,6 +44,8 @@ spec:
             intel.com/intel_sriov_netdevice: '1'
       - name: external-suricata-2
         image: jasonish/suricata:5.0.3
+        command: ["/usr/bin/suricata"]
+        args: ["-c suricata.yaml", "-s signature.rules", "-i net1"]
         resources:
           limits:
             cpu: 2
@@ -60,6 +64,8 @@ spec:
             intel.com/intel_sriov_netdevice: '1'
       - name: external-suricata-3
         image: jasonish/suricata:5.0.3
+        command: ["/usr/bin/suricata"]
+        args: ["-c suricata.yaml", "-s signature.rules", "-i net1"]
         resources:
           limits:
             cpu: 2
@@ -78,6 +84,8 @@ spec:
             intel.com/intel_sriov_netdevice: '1'
       - name: external-suricata-4
         image: jasonish/suricata:5.0.3
+        command: ["/usr/bin/suricata"]
+        args: ["-c suricata.yaml", "-s signature.rules", "-i net1"]
         resources:
           limits:
             cpu: 2
@@ -96,6 +104,8 @@ spec:
             intel.com/intel_sriov_netdevice: '1'
       - name: external-suricata-5
         image: jasonish/suricata:5.0.3
+        command: ["/usr/bin/suricata"]
+        args: ["-c suricata.yaml", "-s signature.rules", "-i net1"]
         resources:
           limits:
             cpu: 2
