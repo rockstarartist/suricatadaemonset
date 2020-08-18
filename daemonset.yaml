@@ -25,7 +25,7 @@ spec:
       - name: external-suricata-1
         image: jasonish/suricata:5.0.3
         command: ["/usr/bin/suricata"]
-        args: ["-i net1"]
+        args: ["-i", "net1"]
         resources:
           limits:
             cpu: 2
@@ -45,7 +45,7 @@ spec:
       - name: external-suricata-2
         image: jasonish/suricata:5.0.3
         command: ["/usr/bin/suricata"]
-        args: ["-i net1"]
+        args: ["-i", "net1"]
         resources:
           limits:
             cpu: 2
@@ -65,7 +65,7 @@ spec:
       - name: external-suricata-3
         image: jasonish/suricata:5.0.3
         command: ["/usr/bin/suricata"]
-        args: ["-i net1"]
+        args: ["-i", "net1"]
         resources:
           limits:
             cpu: 2
@@ -85,7 +85,7 @@ spec:
       - name: external-suricata-4
         image: jasonish/suricata:5.0.3
         command: ["/usr/bin/suricata"]
-        args: ["-i net1"]
+        args: ["-i", "net1"]
         resources:
           limits:
             cpu: 2
@@ -105,7 +105,7 @@ spec:
       - name: external-suricata-5
         image: jasonish/suricata:5.0.3
         command: ["/usr/bin/suricata"]
-        args: ["-i net1"]
+        args: ["-i", "net1"]
         resources:
           limits:
             cpu: 2
@@ -135,37 +135,37 @@ spec:
           path: /data/suricata1/confs
       - name: suricatalogs-2
         hostPath:
-          path: /data/suricata1/logs
+          path: /data/suricata2/logs
       - name: suricataruntimedata-2
         hostPath:
-          path: /data/suricata1/runtime
+          path: /data/suricata2/runtime
       - name: suricataconfigurations-2
         hostPath:
-          path: /data/suricata1/confs
+          path: /data/suricata2/confs
       - name: suricatalogs-3
         hostPath:
-          path: /data/suricata1/logs
+          path: /data/suricata3/logs
       - name: suricataruntimedata-3
         hostPath:
-          path: /data/suricata1/runtime
+          path: /data/suricata3/runtime
       - name: suricataconfigurations-3
         hostPath:
-          path: /data/suricata1/confs
+          path: /data/suricata3/confs
       - name: suricatalogs-4
         hostPath:
-          path: /data/suricata1/logs
+          path: /data/suricata4/logs
       - name: suricataruntimedata-4
         hostPath:
-          path: /data/suricata1/runtime
+          path: /data/suricata4/runtime
       - name: suricataconfigurations-4
         hostPath:
-          path: /data/suricata1/confs
+          path: /data/suricata4/confs
       - name: suricatalogs-5
         hostPath:
-          path: /data/suricata1/logs
+          path: /data/suricata5/logs
       - name: suricataruntimedata-5
         hostPath:
-          path: /data/suricata1/runtime
+          path: /data/suricata5/runtime
       - name: suricataconfigurations-5
         hostPath:
-          path: /data/suricata1/confs
+          path: /data/suricata5/confs
